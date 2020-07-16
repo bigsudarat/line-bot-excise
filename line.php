@@ -64,6 +64,10 @@ if ( sizeof($request_array['events']) > 0 )
 		   $reply_message = 'ไม่ตก';
 	   }	   
 	   
+	   if($text == "ฉันกลับไปนอนได้ไหม"){
+		   $reply_message = 'ได้ ตามสบายจ้า';
+	   }	   
+	  
 	   
 	   
 	   $split_text = explode(" ", $text);
