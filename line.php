@@ -60,6 +60,12 @@ if ( sizeof($request_array['events']) > 0 )
 		   $reply_message = 'ฉันขอเลขที่ใบอนุญาตของคุณเพื่อทำการตรวจสอบ';
 	   }	   
 	    
+	  if($text == "วันนี้ฝนจะตกไหม"){
+		   $reply_message = 'ไม่ตก';
+	   }	   
+	   
+	   
+	   
 	   $split_text = explode(" ", $text);
 	   //foreach ($split_text as $t){$reply_message = $t;}
 	   if (in_array("ฉันหาเลขใบอนุญาตของฉันไม่เจอ", $split_text)) { 
